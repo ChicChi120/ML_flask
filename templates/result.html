@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% if Predict %}
+<div style="text-align: center;">
+  <br>
+  <h2>住宅価格の中央値は</h2>
+  <h1>{{ Predict }}</h1>
+  <h2>です.</h2>
+  <br>
+  <a href="./" class="btn btn-outline-success" type="button">トップへ戻る</a>
+  {% else %}
+  <br>
+  <a href="./" class="btn btn-outline-success" type="button">トップへ戻る</a>
+</div>
+  {% endif %}
+
+{% endblock %}
+

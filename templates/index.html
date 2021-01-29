@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Boston house predict</h1> <br>
+<div id="wrapper" style="text-align: center;">
+    {% for message in form.X1.errors %}
+        <div>{{ message }}</div>
+     {% endfor %}
+
+     {% for message in form.X2.errors %}
+        <div>{{ message }}</div>
+     {% endfor %}
+
+     {% for message in form.X3.errors %}
+     <div>{{ message }}</div>
+     {% endfor %}
+
+     {% for message in form.X4.errors %}
+     <div>{{ message }}</div>
+     {% endfor %}
+
+     {% for message in form.X5.errors %}
+     <div>{{ message }}</div>
+     {% endfor %}
+
+     <form method="POST">
+        {{ form.X1.label }} <br>
+        {{ form.X1 }}
+        <br>
+        {{ form.X2.label }} <br>
+        {{ form.X2 }}
+        <br>
+        {{ form.X3.label }} <br>
+        {{ form.X3 }}
+        <br>
+        {{ form.X4.label }} <br>
+        {{ form.X4 }}
+        <br>
+        {{ form.X5.label }} <br>
+        {{ form.X5 }}
+        <br>
+        <br>
+        
+        {{ form.submit }}
+    </form>
+
+</div>
+
+{% endblock %}
