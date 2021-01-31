@@ -1,7 +1,9 @@
 # Flask で機械学習
 
 ## はじめに
-Python ライブラリである Flask の練習として機械学習を利用した web アプリを作ってみた. [この記事](https://aiacademy.jp/media/?p=382)を参考に scikit-learn の Toy データセット load_boston を使った.
+Python ライブラリである Flask の練習として機械学習を利用した web アプリを作ってみた. [この記事](https://aiacademy.jp/media/?p=382)を参考に scikit-learn の Toy データセット load_boston を分析させる. 完成したweb アプリは下のようになる.
+
+![webapp](https://user-images.githubusercontent.com/47030492/106380852-5429d900-63f8-11eb-9b31-e854ca588006.jpeg)
 
 ## 機械学習のアルゴリズム
 機械学習のアルゴリズムには自分で書いた[コウモリアルゴリズム](https://github.com/ChicChi120/Evolutionary_computation_algorith)を用いた. 今回は重回帰分析により５つの係数を求める. 定数項だけ実行するたびに大きく変わるため, 手で app.py の 15 行目を変更する.
