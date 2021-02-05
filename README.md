@@ -6,7 +6,7 @@ Python ライブラリである Flask の練習として機械学習を利用し
 ![webapp](https://user-images.githubusercontent.com/47030492/106380852-5429d900-63f8-11eb-9b31-e854ca588006.jpeg)
 
 ## 機械学習のアルゴリズム
-機械学習のアルゴリズムには自分で書いた[コウモリアルゴリズム](https://github.com/ChicChi120/Evolutionary_computation_algorith)を用いた. 今回は重回帰分析により５つの係数を求める. 定数項だけ実行するたびに大きく変わるため, 手で app.py の 15 行目を変更する.
+機械学習のアルゴリズムには自分で書いた[コウモリアルゴリズム](https://github.com/ChicChi120/Evolutionary_computation_algorith)を用いた. 今回は重回帰分析により５つの係数を求める. 
 
 ## web アプリについて
 [Bootstrap](https://getbootstrap.jp/) で web ページを作成した. 現時点では機械学習した結果を保存する機能はないので今後, データベースを利用してブログ形式で実装することも考えている.

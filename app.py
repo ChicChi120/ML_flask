@@ -6,14 +6,14 @@ import joblib
 # 学習済みモデルを読み込む
 def predict(parameters):
     
-    pos = joblib.load('bats.pkl')
+    coef = joblib.load('bats.pkl')
     pred = 0
     
-    for i in range(len(pos)):
-        pred += parameters[i] * pos[i]
+    for i in range(len(coef) - 1):
+        pred += parameters[i] * coef[i]
         
     # 定数項
-    pred += 30
+    pred += coef[len(coef)]
 
     return pred
 

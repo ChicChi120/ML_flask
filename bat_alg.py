@@ -163,12 +163,13 @@ if __name__ == '__main__':
     print(pos)
 
     # 定数項を求める
-    coef = np.zeros(N)
+    coef = np.zeros(N + 1)
     const = 0
-    for i in range(len(pos)):
+    for i in range(N):
         coef[i] = data_y.std() / data_x.iloc[:, i].std() * pos[i]
         const -= pos[i] * data_x.iloc[:, i].mean()
 
+    coef[N + 1] = const
     print(const)
 
     # 学習済みモデルの保存
